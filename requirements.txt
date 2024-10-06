@@ -1,0 +1,5 @@
+requests==2.32.3
+konlpy==0.6.0
+python-dotenv==1.0.1
+mecab-python==1.0.0
+mecab-python3==1.0.9

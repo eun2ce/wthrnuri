@@ -1,5 +1,8 @@
 # pycharm
 .idea/
 
-#python
+# python
 */__pycache__/
+
+# environments
+.env
