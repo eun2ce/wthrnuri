@@ -168,18 +168,4 @@ def get_ent_date(token, tag, sentence) -> Optional[tuple]:
             week = find_week.findall(sentence)[0][:-1]
             after_day = day_after * int(week)
 
-    # TODO)
-    # 오늘 날짜 기준 며칠,,? 계산해서 반환해야 할 듯
-    # if (token == "다음주"): day_after = 7
-    #
-    # if (token == "다음"):
-    #     if (re.compile("다음 주").match(sentence) != None): day_after = 7
-    #
-    # if (token =="이번"):
-    #     if (re.compile("이번주").match(sentence) != None) | (re.compile("이번 주").match(sentence) != None): day_after = ?
     return (token, after_day) if (after_day is not None) else None
-
-
-# if __name__ == '__main__':
-#     answer = query("내일 서울 날씨 어때?")
-#     print(f"answer: {answer}")

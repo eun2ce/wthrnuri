@@ -8,11 +8,10 @@ setup(
     version="0.1.0",
     author="eun2ce",
     author_email="joeun2ce@gmail.com",
-    description="Natural language based weather information service package",
+    description="Natural language-based weather information service",
     install_requires=required,
     classifiers=[
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: POSIX :: Linux",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.11"
     ],
     packages=find_packages(include=["wthrnuri"])
