@@ -18,6 +18,14 @@ def query(question) -> str:
     :param question:
     :return:
     """
+    max_length, qstn_intnt = 60, "날씨"
+
+    if len(question) > max_length:
+        return "간결하게 질문해 주세요."
+
+    if qstn_intnt not in question:
+        return "날씨 정보만 물어봐 주세요."
+
     # 문장 에서 필요한 정보만 추출
     entities = parse_sentence(question)
 
